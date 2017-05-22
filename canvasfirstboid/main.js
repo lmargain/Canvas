@@ -42,9 +42,9 @@ class Main {
     this.menuButtons = [];
     this.makeRect = false;
     this.boids = [];
-this.maxBoids =250
+    this.maxBoids =15
     for (var i = 0; i< this.maxBoids; i++) {
-    this.boids[i] = new Boid(this,new vector2d(Math.random()*15,Math.random()*15))
+    this.boids[i] = new Boid(this,new vector2d(Math.random()*500,Math.random()*500))
   }
     //create all initial items
     this.init();
